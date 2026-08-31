@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "squirrelpy"
+version = "0.1.0"
+description = "Official Python SDK for interacting with the Squirrel API."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+
+authors = [
+    { name = "SHAUNTE", email = "shaunta.gates6911@gmail.com" }
+]
+
+keywords = ["squirrel", "api", "sdk", "python", "client", "squirrelpy"]
+
+dependencies = [
+    "httpx>=0.27.0"
+]
+
+[project.urls]
+Homepage = "https://squirrel-ide.vercel.app"
+Source = "https://github.com/shauntagates6911-ops/SquirrelPy"
+Issues = "https://github.com/shauntagates6911-ops/SquirrelPy/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
