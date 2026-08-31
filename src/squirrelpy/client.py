@@ -88,3 +88,18 @@ class SquirrelClient:
 
     def delete(self, endpoint: str, **kwargs):
         return self._request("DELETE", endpoint, **kwargs)
+
+from .cache import SquirrelCache
+
+class SquirrelClient:
+    def __init__(self, api_key):
+        self.cache = SquirrelCache()
+
+    def get(self, endpoint):
+        cached = self.cache.get(endpoint)
+        if cached:
+            return cached
+
+        data = self._request("GET", endpoint)
+        self.cache.remember(endpoint, data)
+        return data
