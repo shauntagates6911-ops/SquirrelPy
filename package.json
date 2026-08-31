@@ -1,0 +1,14 @@
+{
+  "name": "squirrelpy-app",
+  "version": "1.0.0",
+  "description": "A python package containing the most latest version of SquirrelPy.",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "SHAUNTE",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {}
+}
