@@ -15,3 +15,12 @@ for i, line in enumerate(lines):
 
 with open(__file__, "w") as f:
   f.writelines(lines)
+  
+APP_NAME ="SquirrelPy"
+MAJOR = 1
+MINOR = 0
+PATCH = 3
+BUILD = 42
+
+def version_string():
+    return f"{MAJOR}.{MINOR}.{PATCH} (build {BUILD})"
